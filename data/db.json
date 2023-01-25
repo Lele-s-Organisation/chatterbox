@@ -1,0 +1,46 @@
+{
+  "chatters": [
+    {
+      "id": 1,
+      "name": "Cleopatra",
+      "message": "Hello, I'm Cleopatra. I'm a chatbot. I'm here to help you with your questions about the museum.",
+      "age": 21,
+      "alive": false
+    },
+    {
+      "id": 2,
+      "name": "Mark Twain",
+      "message": "Hello, I'm Mark Twain. I'm a chatbot. I'm here to help you with your questions about the museum.",
+      "age": "75",
+      "alive": false
+    },
+    {
+      "id": 3,
+      "name": "Mona Lisa",
+      "message": "Hello, I'm Mona Lisa. I'm a chatbot. I'm here to help you with your questions about the museum.",
+      "age": 500,
+      "alive": true
+    },
+    {
+      "id": 4,
+      "name": "Socrates",
+      "message": "Hello, I'm Socrates. I'm a chatbot. I'm here to help you with your questions about the museum.",
+      "age": 70,
+      "alive": false
+    },
+    {
+      "id": 5,
+      "name": "Michel Jackson"
+    },
+    {
+      "id": 6,
+      "name": "Marie Curie",
+      "alive": false
+    },
+    {
+      "id": 7,
+      "name": "Leopard",
+      "alive": true
+    }
+  ]
+}
