@@ -66,3 +66,9 @@ npm run test:e2e
 ```sh
 npm run lint
 ```
+
+### Prototy / Mock backend data
+
+```sh
+json-server --watch data/db.json
+```
