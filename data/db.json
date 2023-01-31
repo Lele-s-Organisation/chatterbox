@@ -3,6 +3,7 @@
     {
       "id": 1,
       "name": "Cleopatra",
+      "image": "https://media.discordapp.net/attachments/1042789151726129153/1068543021936816148/I8_Team_cleopatra_sitting_in_temple_face_clos_up_3bf51d88-4eff-41bb-bccc-f5e00fa21108.png",
       "message": "Hello, I'm Cleopatra. I'm a chatbot. I'm here to help you with your questions about the museum.",
       "age": 21,
       "alive": false
@@ -10,6 +11,7 @@
     {
       "id": 2,
       "name": "Mark Twain",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Mark_Twain_by_AF_Bradley.jpg/640px-Mark_Twain_by_AF_Bradley.jpg",
       "message": "Hello, I'm Mark Twain. I'm a chatbot. I'm here to help you with your questions about the museum.",
       "age": "75",
       "alive": false
@@ -17,6 +19,7 @@
     {
       "id": 3,
       "name": "Mona Lisa",
+      "image": "https://media.discordapp.net/attachments/1042789151726129153/1069972542254751854/I8_Team_mona_lisa_in_modern_times_alive_now_sitting_in_public_t_a58fc124-641f-4026-8662-454e07e04147.png",
       "message": "Hello, I'm Mona Lisa. I'm a chatbot. I'm here to help you with your questions about the museum.",
       "age": 500,
       "alive": true
@@ -24,22 +27,27 @@
     {
       "id": 4,
       "name": "Socrates",
+      "image": "https://media.discordapp.net/attachments/1042789151726129153/1068555056611340368/I8_Team_socrates_discussing_in_huge_hall_face_close_up_60e81603-0958-406c-93de-99459d5d5428.png",
       "message": "Hello, I'm Socrates. I'm a chatbot. I'm here to help you with your questions about the museum.",
       "age": 70,
       "alive": false
     },
     {
       "id": 5,
-      "name": "Michael Jackson"
+      "name": "Michael Jackson",
+      "image": "https://cdn.shopify.com/s/files/1/0747/3829/products/mV0073_1024x1024.jpeg?v=1571444209",
+      "alive": false
     },
     {
       "id": 6,
       "name": "Marie Curie",
+      "image": "https://cdn.prod.www.spiegel.de/images/01d302a8-0001-0004-0000-000001209130_w1200_r1_fpx49.99_fpy33.09.jpg",
       "alive": false
     },
     {
       "id": 7,
       "name": "Leopard",
+      "image": "https://image.stern.de/30680786/t/9U/v3/w1440/r1/-/leopard.jpg",
       "alive": true
     }
   ]

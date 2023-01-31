@@ -4,9 +4,9 @@
 <template>
   <h1>Select Chat:</h1>
   <div class="chatters-list">
-    <div v-for="chatter in chatters" :key="chatter.id" class="chatter">
+    <div v-for="chatter in chatters" :key="chatter.id" class="chatter" :style="'background-image: url(' + chatter.image + ')'">
       <router-link :to="'/chats/' + chatter.id">
-        {{ chatter.name }}
+        <p class="inline">{{ chatter.name }}</p>
       </router-link>
     </div>
   </div>
@@ -21,6 +21,9 @@ export default {
     }
   },
   mounted() {
+    if(document.getElementById('eye-disctractor'))
+      document.getElementById('eye-disctractor').remove();
+
     fetch('http://localhost:3000/chatters')
       .then(res => res.json())
       .then(data => {
@@ -43,5 +46,23 @@ export default {
     border: 1px solid var(--color-border);
     border-radius: 5px;
     margin-bottom: 1rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    p{
+      color: white;
+    }
+    
   }
+.chatter::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+
 </style>

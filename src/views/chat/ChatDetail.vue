@@ -1,11 +1,14 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 
 <template>
-  <h1>Start chatting here</h1>
   <div v-if="chatter">
     <h1>{{ chatter.name }}</h1>
     <p class="description">{{ chatter.message }}</p>
     <p class="compay"> {{ chatter.alive ? 'is alive' : 'is dead' }}</p>
+    <button>{{ chatter.alive ? 'start chatting' : 'revive ⭐' }}</button>
+  </div>
+  <div v-if="chatter">
+    <img class="profile-picture" :src="chatter.image" alt="loading">
   </div>
 </template>
 
@@ -22,6 +25,11 @@ export default {
       .then(res => res.json())
       .then(data => this.chatter = data)
       .catch(err => console.log(err.message))
+  },
+  methods: {
+    startChatting() {
+      this.$router.push(`/chats/${this.$route.params.id}/chat`)
+    }
   }
 }
 </script>
@@ -34,5 +42,13 @@ export default {
     font-style: italic;
     font-weight: 600;
     margin-top: 2rem;
+  }
+
+  .profile-picture {
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 50%;
   }
 </style>
