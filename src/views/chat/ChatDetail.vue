@@ -3,9 +3,10 @@
 <template>
   <div v-if="chatter">
     <h1>{{ chatter.name }}</h1>
-    <p class="description">{{ chatter.message }}</p>
+    <p class="description">{{ chatter.messages[0].text }}</p>
+    <p class="age">{{ chatter.age }} Years old</p>
     <p class="compay"> {{ chatter.alive ? 'is alive' : 'is dead' }}</p>
-    <button>{{ chatter.alive ? 'start chatting' : 'revive ⭐' }}</button>
+    <button @click="startChatting">{{ chatter.alive ? 'start chatting' : 'revive ⭐' }}</button>
   </div>
   <div v-if="chatter">
     <img class="profile-picture" :src="chatter.image" alt="loading">
@@ -44,11 +45,4 @@ export default {
     margin-top: 2rem;
   }
 
-  .profile-picture {
-    width: 350px;
-    height: 350px;
-    margin: auto;
-    object-fit: cover;
-    border-radius: 50%;
-  }
 </style>
